@@ -7,8 +7,25 @@
 </head>
 <body>
  <h1>Eric的牛逼网站</h1> 
+ <main>
+    <h1>Plant vs Empty Pot Classifier</h1>
+    <p>Built by Eric & Rango in a day on 24th May 2020</p>
+    <div id="loader">
+      <h1>Loading...</h1>
+      <p>Loading trained model...</p>
+    </div>
+    <div id="classifier" style="display: none;">
+      <label style="cursor: pointer;">
+        <img id="predict-img" src="./a_plant.jpg" style="max-height: 375px;" /><br/>
+        <input id="my-file-selector" type="file" accept="image/jpeg, image/png">
+      </label>
+      <br/>
+      <h2 id="predict_msg" style="font-style: italic; color: red;"></h2>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <script src="index.js"></script>
 <img src="./EricCV.png" alt="">
-<input type="text">
  <img src="./Eric-and-Friends.jpg" style="width: 600px; border-radius: 20%; display: block;" alt="">
 </body>
 </html>
